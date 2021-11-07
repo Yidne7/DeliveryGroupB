@@ -52,13 +52,13 @@ title: DeliveryAppGroupB
   put:
     body:
       application/json:
-        example:
-          {
-            "id": 101,  
-              "customer_id": 23,
-              "driver_id": 403,
-              "unit_price": 855.0
-          }
+        example: !include EXAMPLES/
+          # {
+          #   "id": 101,  
+          #     "customer_id": 23,
+          #     "driver_id": 403,
+          #     "unit_price": 855.0
+          # }
     responses:
       201:
         body:
