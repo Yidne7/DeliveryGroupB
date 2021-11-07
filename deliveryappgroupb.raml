@@ -5,20 +5,8 @@ title: DeliveryAppGroupB
   post:
     body:      
       application/json:
-        example:
-          [{
-        "id": 100,
-        "customer_id": 22,
-        "driver_id": 403,
-        "unit_price": 411.0,
-        },
-        {
-        "id": 101,  
-        "customer_id": 23,
-        "driver_id": 403,
-        "unit_price": 855.0
-          }
-          ]
+        example: !include EXAMPLES/ADMINexample.raml
+
           
     responses:
       201:
@@ -53,13 +41,13 @@ title: DeliveryAppGroupB
       201:
         body:
           application/json:
-            example:
-              {
-              "id": 101,  
-              "customer_id": 23,
-              "driver_id": 403,
-              "unit_price": 855.0
-              }
+            example: !include EXAMPLES/
+              # {
+              # "id": 101,  
+              # "customer_id": 23,
+              # "driver_id": 403,
+              # "unit_price": 855.0
+              # }
       404:
         body:
           application/json:
