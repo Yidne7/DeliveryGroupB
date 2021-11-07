@@ -2,7 +2,7 @@
 title: DeliveryAppGroupB
 
 traits:
-  Errors: 
+  Errors: !include Traits/ErrorResponces.raml
 
 
 /Amdin:
@@ -22,24 +22,11 @@ traits:
                   msg: "Account successfully created!"
                 }                                   
     is:
-      - 
+      - Errors
                 
                 
                 
-      400:
-        body:
-          application/json:
-            example:
-              {
-                msg: "Bad request"
-              }
-      500:
-        body:
-          application/json:
-            example:
-              {
-                msg: "server error"
-              }
+
   get:
     responses:
       201:
@@ -67,20 +54,22 @@ traits:
               {
                 msg: "succesfully Edited"
               }
-      405:
-        body:
-          application/json:
-            example:
-              {
-                msg: "Not allowed"
-              }
-      500:
-        body:
-          application/json:
-            example:
-              {
-                msg: "server error"
-              }
+
+    
+      # 405:
+      #   body:
+      #     application/json:
+      #       example:
+      #         {
+      #           msg: "Not allowed"
+      #         }
+      # 500:
+      #   body:
+      #     application/json:
+      #       example:
+      #         {
+      #           msg: "server error"
+      #         }
   
 
 
