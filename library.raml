@@ -1,4 +1,7 @@
 #%RAML 1.0 Library
+securitySchemes:
+  Basic: !include Security/Basic.raml
+  Oath: !include Security/Oath.raml
 usage: Collection of API fragment 
 types:
   Admin: !include Data Type/AdmindataType.raml
