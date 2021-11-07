@@ -1,6 +1,10 @@
 #%RAML 1.0
 title: DeliveryAppGroupB
 
+traits:
+  Errors: 
+
+
 /Amdin:
   post:
     body:      
@@ -17,7 +21,8 @@ title: DeliveryAppGroupB
                 {
                   msg: "Account successfully created!"
                 }                                   
-      
+    is:
+      - 
                 
                 
                 
