@@ -53,6 +53,12 @@ title: DeliveryAppGroupB
               "unit_price": 855.0
               }
       404:
+        body:
+          application/json:
+            example:
+              {
+                msg: "Not Found"
+              }
   put:
     body:
       application/json:
@@ -63,6 +69,8 @@ title: DeliveryAppGroupB
               "driver_id": 403,
               "unit_price": 855.0
           }
+        
+      
   delete:
     body:
       application/json:
