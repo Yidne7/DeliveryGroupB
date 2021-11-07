@@ -75,6 +75,7 @@ traits:
                 msg: "Successfully deleted"
               }
     is:
+      Errors
 
                
 
@@ -122,20 +123,11 @@ traits:
               {
                 msg: "Succefully Logged in "
               }
-      404:
-        body:
-          application/json:
-            example:
-              {
-                msg: "Not Found"
-              }
-      500:
-        body:
-          application/json:
-            example:
-              {
-                msg: "Server Error"
-              }    
+
+
+    is:
+      - Errors
+  
 
 /Delivery Man:
   get:
@@ -144,7 +136,7 @@ traits:
       200:
         body:
           application/json:
-            example: !
+            example: !include 
 
               
 
