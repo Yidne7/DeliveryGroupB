@@ -28,6 +28,7 @@ uses:
       201:
         body:
           application/json:
+            type: lib.Admin
             example: !include EXAMPLES/ADMINGET_PUT_dELETE_example.raml
 
       404:
@@ -40,6 +41,7 @@ uses:
   put:
     body:
       application/json:
+        type: lib.Admin
         example: !include EXAMPLES/ADMINGET_PUT_dELETE_example.raml
 
     responses:
