@@ -11,7 +11,6 @@ uses:
         type: lib.Admin []
         example: !include EXAMPLES/ADMINexample.raml
 
-          
     responses:
       201:
         body:
@@ -22,10 +21,7 @@ uses:
                   msg: "Account successfully created!"
                 }                                   
     is:
-      - lib.Errors
-                
-                
-                
+      - lib.Errors              
 
   get:
     responses:
@@ -57,10 +53,7 @@ uses:
 
     is:
       - lib.Errors
-
-
-
-      
+ 
   delete:
     body:
       application/json:         
@@ -76,11 +69,6 @@ uses:
               }
     is:
       lib.Errors
-
-               
-
-        
-
 
 /Customer:
   post:
@@ -119,7 +107,6 @@ uses:
               }
     is:
       - lib.Errors
-  
 
 /Delivery Man:
   get:
