@@ -58,7 +58,8 @@ uses:
  
   delete:
     body:
-      application/json:         
+      application/json:
+        type: lib.Admin         
         example: !include EXAMPLES/ADMINGET_PUT_dELETE_example.raml
   
     responses:
@@ -76,6 +77,7 @@ uses:
   post:
     body:
       application/json:
+        type: lib.Customer
         example: !include EXAMPLES/Customerexample.raml
 
     responses:
