@@ -26,14 +26,22 @@ title: DeliveryAppGroupB
               {
                 msg: "Account sucessfully created!"
               }
-      404:
+      400:
         body:
           application/json:
             example:
               {
-                msg: "Not found"
+                msg: "Bad request"
               }
-    get
+      500:
+        body:
+          application/json:
+            example:
+              {
+                
+              }
+    get:
+
             
 
 
