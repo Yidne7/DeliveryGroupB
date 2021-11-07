@@ -89,14 +89,8 @@ traits:
   post:
     body:
       application/json:
-        example:
-          {
-            "Name": "Abebe beso bela", 
-            "Address": "123 abc white house",
-            "Email": "Abebe_Bela@Ethio.com",
-            "Phone Number": 025568478
-            
-          }
+        example: !include EXAMPLES/Customerexample.raml
+
     responses:
       201:
         body:
