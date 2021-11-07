@@ -1,7 +1,9 @@
 #%RAML 1.0
 title: DeliveryAppGroupB
 types:
-  Admin: !include 
+  Admin: !include Data Type/AdmindataType.raml
+  Customer: !include Data Type/CustomerdataType.raml
+  DeliveryMan: !include Data Type/DeliveryMandataType.raml
 traits:
   Errors: !include Traits/ErrorResponces.raml 
 
