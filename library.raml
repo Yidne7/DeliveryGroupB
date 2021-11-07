@@ -1,5 +1,10 @@
 #%RAML 1.0 Library
 usage: Collection of API fragment 
 types:
+  Admin: !include Data Type/AdmindataType.raml
+  Customer: !include Data Type/CustomerdataType.raml
+  DeliveryMan: !include Data Type/DeliveryMandataType.raml
+traits:
+  Errors: !include Traits/ErrorResponces.raml 
   
 
