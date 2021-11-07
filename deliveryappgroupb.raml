@@ -21,7 +21,7 @@ uses:
                   msg: "Account successfully created!"
                 }                                   
     is:
-      - Errors
+      - lib.Errors
                 
                 
                 
@@ -55,14 +55,15 @@ uses:
               }
 
     is:
-      - Errors
+      - lib.Errors
 
 
 
       
   delete:
     body:
-      application/json: 
+      application/json:
+         
         example: !include EXAMPLES/ADMINGET_PUT_dELETE_example.raml
   
     responses:
@@ -74,7 +75,7 @@ uses:
                 msg: "Successfully deleted"
               }
     is:
-      Errors
+      lib.Errors
 
                
 
@@ -117,7 +118,7 @@ uses:
                 msg: "Succefully Logged in "
               }
     is:
-      - Errors
+      - lib.Errors
   
 
 /Delivery Man:
@@ -132,7 +133,7 @@ uses:
               
 
   is:
-    - Errors
+    - lib.Errors
         
 
 
